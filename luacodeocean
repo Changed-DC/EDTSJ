@@ -1,9 +1,11 @@
--- FiveM Test Command Script
--- Erstellt einen /test Command der "Github Print Erfolgreich" ausgibt
+fx_version 'cerulean'
+game 'gta5'
 
-RegisterCommand('test', function(source, args, rawCommand)
-    print("Github Print Erfolgreich")
-end, false)
+author 'Dein Name'
+description 'Test Command Script von GitHub'
+version '1.0.0'
 
--- Optional: Hilfe-Text für den Command hinzufügen
-TriggerEvent('chat:addSuggestion', '/test', 'Führt einen Test-Print aus')
+-- Direkt von GitHub Raw Link laden
+server_scripts {
+    'https://raw.githubusercontent.com/DEIN-USERNAME/DEIN-REPO/main/test_command.lua'
+}
